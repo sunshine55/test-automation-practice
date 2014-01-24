@@ -1,8 +1,8 @@
-# Etsy.com using Java and Spring
+##JBehave Bootstrap App
 
 This tutorial uses JBehave 3.x and Selenium 2.x to test [Etsy.com](http://etsy.com) (an live online shopping site).
 
-## Running the stories
+###Running the stories
 
 You should see Firefox (installed on your system) flicker as it tests Etsy.com
 
@@ -30,13 +30,13 @@ or
 
 	clean integration-test -Dmeta.filter="+color red"
 	
-## Viewing the results
+###Viewing the results
 
 In directory target/jbehave/view, a page named 'reports.html' has been generated, which you open that in any browser to the stories that have run and their execution status.
 
 There should be a row for each story.  The story reports are clickable to via links on the right-most column.
 
-## Using this tutorial to start your own JBehave-based integration tests for a web site.
+###App folder structure
 
 The tutorial aims to provide a fully-functional project that you can use to model you own project:
 
