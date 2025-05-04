@@ -1,47 +1,27 @@
-##JBehave Bootstrap App
+# BDD Testing Practice
 
-This tutorial uses JBehave 3.x and Selenium 2.x to test [Etsy.com](http://etsy.com) (an live online shopping site).
+This tutorial uses different BDD frameworks in different languages to practice automated acceptance and E2E testing
 
-###Running the stories
+## Branch Model
 
-You should see Firefox (installed on your system) flicker as it tests Etsy.com
+Each `feature/*` branch is a practice on a BDD framework.
 
-This will run the build and (after a minute or so) Firefox will open and test the etsy.com website:
-
-    mvn clean integration-test 
-
-This will run a single story (one contained in a etsy_cart.story file):
-
-    mvn clean integration-test -DstoryFilter=etsy_cart
-
-This will run a suite based on the meta filters in the three story files:
-
-    mvn clean integration-test -Dmeta.filter="+color red"
-
-If you're using Spring Tool Suite, simply import this project as a Maven project, configure the project Maven Build (right click on project -> Run As -> Run Configurations), enter these for Goals input section:
+For example: `feature/jbehave` is a practice on in Java; `feature/capybara` is a practice on Ruby language...
 	
-	clean integration-test
+## Practice
 
-or
+In order to work/enhance on a practice, it's better to checkout the feature branch for a separate folder:
 
-	clean integration-test -DstoryFilter=etsy_cart
+```bash
+# Create root directory
+mkdir test-autmation-practice && cd test-automation-practice
 
-or
+# Enhance the practice on Java BDD
+mkdir jbehave && cd jbehave
+git init
+git add remote origin https://github.com/sunshine55/test-automation-practice.git
+git fetch origin feature/jbehave
+git checkout jbehave
+```
 
-	clean integration-test -Dmeta.filter="+color red"
-	
-###Viewing the results
-
-In directory target/jbehave/view, a page named 'reports.html' has been generated, which you open that in any browser to the stories that have run and their execution status.
-
-There should be a row for each story.  The story reports are clickable to via links on the right-most column.
-
-###App folder structure
-
-The tutorial aims to provide a fully-functional project that you can use to model you own project:
-
-1. src/main/java/org/jbehave/tutorials/etsy/EtsyDotComStories.java is the entry-point that JBehave uses to run the stories. 
-2. src/main/stories contains the stories run by JBehave via EtsyDotComStories.java.
-4. src/main/java/org/jbehave/tutorials/etsy/steps/EtsyDotComSteps.java contains the steps mapped to the textual steps.
-5. src/main/java/org/jbehave/tutorials/etsy/pages contains the Groovy page-objects used by steps to abstract in a more manageable and maintainable way the interaction with the web pages via Selenium WebDriver.
-6. src/main/resources/etsy-steps.xml contains the Spring configuration for composition the steps
+Follow README on each feature branch to setup local development.
