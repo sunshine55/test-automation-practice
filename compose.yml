@@ -1,0 +1,7 @@
+services:
+  playwright:
+    image: node:23-bookworm-slim
+    container_name: playwright
+    volumes:
+      - ./:/codebase:delegated
+    command: tail -f /dev/null

@@ -1,27 +1,24 @@
-# BDD Testing Practice
+# Automation Test with Playwright
 
-This tutorial uses different BDD frameworks in different languages to practice automated acceptance and E2E testing
+Leverage Playwright to automate tasks that requires browser interaction
 
-## Branch Model
+## Prequisites
 
-Each `feature/*` branch is a practice on a BDD framework.
-
-For example: `feature/jbehave` is a practice on in Java; `feature/capybara` is a practice on Ruby language...
+VSCode, Docker Engine (or Docker Desktop)
 	
 ## Practice
-
-In order to work/enhance on a practice, it's better to checkout the feature branch for a separate folder:
 
 ```bash
 # Create root directory
 mkdir test-autmation-practice && cd test-automation-practice
 
-# Enhance the practice on Java BDD
-mkdir jbehave && cd jbehave
+# Enhance the practice on Playwright
+mkdir playwright && cd playwright
 git init
 git add remote origin https://github.com/sunshine55/test-automation-practice.git
-git fetch origin feature/jbehave
-git checkout jbehave
+git fetch origin feature/playwright
+git checkout feature/playwright
+docker compose up -d
 ```
 
-Follow README on each feature branch to setup local development.
+Connect to the container using VSCode's `ms-vscode-remote.remote-containers` plugin
