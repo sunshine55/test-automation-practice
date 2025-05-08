@@ -4,14 +4,17 @@
   "private": true,
   "version": "1.0.0",
   "description": "Leverage Playwright to automate web testing and scraping.",
-  "main": "index.js",
   "scripts": {
     "format": "prettier --write ./src",
-    "exec": "NODE_ENV=local node --env-file=.env.local ./src/index.js"
+    "upgrade": "ncu -u",
+    "build": "tsc",
+    "exec": "NODE_ENV=local node --env-file=.env.local ./dist/index.js"
   },
   "author": "sunshine55",
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "uuid": "^11.1.0"
+    "npm-check-updates": "18.0.1",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3",
+    "uuid": "11.1.0"
   }
 }
