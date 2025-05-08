@@ -1,0 +1,17 @@
+{
+  "name": "playwright-tutorial",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Leverage Playwright to automate web testing and scraping.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ./src",
+    "exec": "NODE_ENV=local node --env-file=.env.local ./src/index.js"
+  },
+  "author": "sunshine55",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "uuid": "^11.1.0"
+  }
+}
