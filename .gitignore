@@ -12,3 +12,10 @@ node_modules/
 
 # Ignore specific files:
 package-lock.json
+
+# Playwright
+core
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

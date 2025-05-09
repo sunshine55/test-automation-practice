@@ -7,14 +7,18 @@
   "scripts": {
     "format": "prettier --write ./src",
     "upgrade": "ncu -u",
-    "build": "tsc",
-    "exec": "NODE_ENV=local node --env-file=.env.local ./dist/index.js"
+    "test": "playwright test",
+    "test:report": "playwright show-report"
   },
   "author": "sunshine55",
   "devDependencies": {
+    "@playwright/test": "1.52.0",
+    "@types/node": "22.15.17",
     "npm-check-updates": "18.0.1",
     "prettier": "3.5.3",
-    "typescript": "5.8.3",
-    "uuid": "11.1.0"
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "playwright": "1.52.0"
   }
 }

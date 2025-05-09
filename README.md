@@ -5,7 +5,7 @@ Leverage Playwright to automate tasks that requires browser interaction
 ## Prequisites
 
 VSCode, Docker Engine (or Docker Desktop)
-	
+
 ## Practice
 
 ```bash
@@ -22,3 +22,5 @@ docker compose up -d
 ```
 
 Connect to the container using VSCode's `ms-vscode-remote.remote-containers` plugin
+
+See. [Playright Docs](https://playwright.dev/docs/docker)

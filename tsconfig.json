@@ -7,8 +7,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./e2e"
   },
-  "include": ["src/**/*"],
+  "include": ["e2e/**/*"],
   "exclude": ["node_modules", "dist"]
 }
